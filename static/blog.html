@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客详情</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" href="css/me.css">
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="ui inverted attach segment m-padded-tb-mini">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu"> <!-- stackable可堆叠的，这样子就能适应移动端 -->
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right item">
+                    <div class="ui icon inverted transparent input m-mobile-hide">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>     
+    </nav>
+
+    <!-- 博客正文 -->
+    <div class="m-container m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://picsum.photos/seed/picsum/100/100" alt="" class="ui avatar image">
+                        <!--class="ui avatar image"设置一个圆形的小图像 -->
+                        <div class="content">
+                            <a href="#" class="header">zgl</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar"></i> 2020-7-19
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i> 2324
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <img src="https://picsum.photos/seed/picsum/800/450" alt="" class="ui fluid rounded image"> <!-- fluid image撑满外层容器 -->
+            </div>
+            <div class="ui attached positive segment">
+                <!-- message -->
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange basic label">原创</div>
+                </div>
+                <h2 class="ui center aligned header">关于刻意练习的清单</h2>
+                <div id="content" class="m-padded-lr-responsive m-padded-tb-large">
+                    <p>UCSD博士毕业，能去UC Berkeley教书，那很不简单。因为他导师的导师很牛逼。另外可以看出他的学生都没有去学术界了，看来数学学术界竞争激烈。他选这个导师，自然也不想进学术界的，因为历史上8各师兄师姐都没有进，自己也很难进，还不如早点出来工作算了。</p>
+                    <p>很多数学博士也想转量化，但都博士4、5年级的时候转，时间紧迫，年纪又大，心里着急。这位小哥心里不急的，才研一，本科刚毕业。而且显然导师也是老好人，不卡他，想毕业就毕业呗。说实话，基础数学的博士对做量化而言，意义更多是拿一个工作签证和基本工资高一些，学的那些东西驴唇不对马嘴，还真没啥用。</p>
+                    <p>话说回来，小哥的选择很不错的。Citadel的老大赵鹏也是北大本科+伯克利博士，而且少年班，不过小哥博士两年毕业一下子节省了3年，其实博士毕业的年纪跟赵鹏也差不多了，大家起点差不多的。其实年轻还是右好处的。西蒙斯博士毕业才23岁，丘成桐22岁，都是伯克利的。陶哲轩起步比别人早，但博士毕业也22岁左右，跟西蒙斯、丘成桐差不多的。这位小哥是24岁博士毕业，其实比几位大师已经晚了。</p>
+                    <p>话说回来，我想说什么呢？首先，这位小哥压根没读金融工程硕士，所以哪怕量化交易再赚钱，其实跟你去读金融工程硕士关系不大。其次，这位小哥进的是业内顶级的公司，工资不低。而且他作为纯数背景，也只有最顶级的公司愿意招，而且很可能被其它几家拒了。比如Citadel一年招50个quant，DE Shaw才5个。另外小哥是实习留下的，稍微容易一些，规划早很重要。</p>
+                    <p>反正我觉得做任何事情都差不多，看你愿意投入的时间吧。聪敏一些可以效率高一些不用投入这么多时间；没那么聪明就要投入时间多一些；但如果人又不是很努力，就只能把战线拉长，比如别人996半年，你955一年，其实也差不多的；或者更聚焦，别人996三年10个项目，你1044三年一个项目，其实反而更好。大公司出于成本收益考虑喜欢砍项目甚至砍团队，半年、一年没啥成绩，项目砍了，甚至团队砍了；如果自己业余做量化，没有这样的压力，多长时间都行。</p>
+                    <p>有人说中国内卷，赚钱的工作不多，要么码农，要么量化，或者只有码农，其实我觉得这思路就很有问题。世界上人均GDP排在前10的国家，卢森堡、瑞士之类的，人家码农也不行，量化也不行，为啥就人人富裕吗？好像也没有996这么辛苦。反之东亚内卷国度，比如日本，人均GDP连续跌了20年，都快跌出发达国家了，工作却这么辛苦，这又是为什么？</p>
+                    <p>像卢森堡这种，50多万人的国家，居然也有一家世界500强，雇佣了30万人，做钢铁的，传统行业，放国内都是连续10几年产能过剩的，为啥就能人均GDP 8万美元？所以国人有一种很不好的心态，“万般皆下品，唯有码农高”，鄙视这个鄙视那个，人家做个过剩产业也能赚钱，活得还轻松，为啥要学你码农搞内卷？</p>
+                    <p>瑞士也类似，800万人的国家，14家世界500强，什么军刀啊手表啊，做什么都能赚钱，也不需要内卷。韩国6000万人，16家世界500强，也没听说搞什么金融，都是电子、汽车、电力等等，人家人均GDP也有3万美元。就中国，天天刷题想着进大厂，人均GDP才1万美元，还看不起这个看不起那个，人家搞个量化培训业抨击一番，夜郎自大么不是。</p>
+                    <p>所以，总结一下。如果想做量化，我是不反对的，但这个小哥的背景，基本上是下限了。要金牌没金牌，要名校还是个公立，也就是勉强合格；比起其它动不动哈佛麻省国金奥赛金牌的，他的背景还差了一些。没这背景，也很难进好公司，工作也不稳定；但如果还是想做量化，建议可以业余做，拿自己的钱来做，分散风险。毕竟现在利率越来越低，余额宝也不划算。</p>
+                    <p>有兴趣的同学可以加微信babyquant，或关注微信公众号babyquantFinance，谢谢！</p>
+                </div>
+                <!-- 标签 -->
+                <div class="m-padded-responsive">
+                    <div class="ui basic teal left pointing label">方法论</div>
+                </div>
+                <!-- 赞赏 -->
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui orange basic circular button">赞赏</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidded">
+                    <div class="ui center aligned orange basic label">
+                        <div class="ui images" style="font-size: inherit !important">
+                            <div class="image">
+                                <img src="images/二维码.jpg" alt="" class="ui rounded bordered image" style="width: 120px;">
+                                <div>微信</div>
+                            </div>
+                            <div class="image">
+                                <img src="images/二维码.jpg" alt="" class="ui rounded bordered image" style="width: 120px;">
+                                <div>微信</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui centered attached positive message">
+                <!-- 博客信息 -->
+                <div class="ui grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>作者：zgl</li>
+                            <li>发表时间：2020.7.20</li>
+                            <li>版权说明：自由转载——非商用——非衍生——保持署名</li>
+                            <li>公众号装在：请在文末添加作者公众号二维码</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="images/二维码.jpg" alt="" class="ui right floated rounded bordered image" style="width: 100px">
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached segment">
+                <!-- 留言区域列表 -->
+                <div class="ui teal segment">
+                    <div class="ui comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="https://picsum.photos/seed/picsum/100/100">
+                          </a>
+                          <div class="content">
+                            <a class="author">Matt</a>
+                            <div class="metadata">
+                              <span class="date">Today at 5:42PM</span>
+                            </div>
+                            <div class="text">
+                              How artistic!
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="https://picsum.photos/seed/picsum/100/100">
+                          </a>
+                          <div class="content">
+                            <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                              <span class="date">Yesterday at 12:30AM</span>
+                            </div>
+                            <div class="text">
+                              <p>This has been very useful for my research. Thanks as well!</p>
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                          <div class="comments">
+                            <div class="comment">
+                              <a class="avatar">
+                                <img src="https://picsum.photos/seed/picsum/100/100">
+                              </a>
+                              <div class="content">
+                                <a class="author">Jenny Hess</a>
+                                <div class="metadata">
+                                  <span class="date">Just now</span>
+                                </div>
+                                <div class="text">
+                                  Elliot you are always so right :)
+                                </div>
+                                <div class="actions">
+                                  <a class="reply">回复</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="https://picsum.photos/seed/picsum/100/100">
+                          </a>
+                          <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                              <span class="date">5 days ago</span>
+                            </div>
+                            <div class="text">
+                              Dude, this is awesome. Thanks so much
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>   
+                </div>
+                <div class="ui form">
+                    <div class="field">
+                        <textarea name="content" placeholder="请输入评论信息" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="姓名">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="nickname" placeholder="姓名">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide  m-margin-bottom-small">
+                            <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">    <!-- grid一共分成16份 -->
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="images/二维码.jpg" class="ui rounded image" alt="" style="width: 110px;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事（UserStory）</a>
+                        <a href="#" class="item">关于刻意练习的清单</a>
+                        <a href="#" class="item">但行好事莫问前程</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: Zhengguoliang0625@163.com</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Blog</h4>
+                    <p>这是我的个人博客、会分享我的一些学习心得和日常生活=-=</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright</p>
+        </div>
+
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <!-- 如果有m-item属性值就去除m-mobile-hide属性值 -->
+    <script>
+        $('.menu.toggle').click(function (){
+            $('.m-item').toggleClass('m-mobile-hide')
+        });
+
+        $('#payButton').popup({
+            popup : $('.payQR.popup'),
+            on : 'click',
+            position: 'bottom center'
+        });
+    </script>
+</body>
+</html>
